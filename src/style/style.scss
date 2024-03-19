@@ -1,0 +1,142 @@
+@import-normalize;
+
+*{
+  box-sizing: border-box;
+  color: #000;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  background-color: rgb(249,246,241);
+}
+
+.recharts-cartesian-grid{
+  stroke: #000 !important;
+}
+
+textarea{
+  background-color: #000;
+  width: 50px;
+  resize: none;
+  overflow: hidden;
+  height: 20px;
+  // min-height: 10px;
+  // max-height: 100px;
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 100%
+}
+
+.navigation{
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  &__item{
+    transition: .3s;
+  }
+}
+
+.model{
+  &__title{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 30px;
+  }
+  &__wrapper{
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%
+  }
+  &__top{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left{
+    flex: 50%;
+    padding: 0 10px 0 60px;
+    display: flex;
+  }
+  &__right{
+    flex: 50%;
+    // padding-top: 40px;
+  }
+  &__phases{
+    // display: flex;
+  }
+  &__phase{
+    display: flex;
+    position: relative;
+    padding: 0 40px 0 0;
+    justify-content: start;
+  }
+  &__phase + &__phase{
+    // padding-left: 10px;
+  } 
+  &__phase-item{
+  }
+  &__phase-color{
+    // content: "";
+    // position: absolute;
+    // top: 45%;
+    // right: 5px;
+    width: 30px;
+    height: 3px;
+    margin-top: 8px;
+    margin-left: 10px;
+  }
+  &__parameters{
+    display: flex;
+  }
+  &__parameters-item + &__parameters-item{
+    padding-left: 10px;
+  } 
+  &__right{
+    // margin: 0 auto;
+  }
+  &__img{
+    // height: 100%;
+    width: 180px;
+    display: block;
+    margin: 0 auto; 
+  }
+}
+
+.practiseModel{
+  &__wrapper{
+    // display: flex;
+    // & > * {
+    //   flex: 50%;
+    // }
+        margin-bottom: 50px;
+  }
+  &__span-container{
+    display: flex;
+    // text-align: center;
+    margin: 0 auto;
+    width: 50%;
+  }
+  &__span + &__span{
+    padding-left: 15px;
+  }
+}
+
+.practiseGraph{
+  width: 800px;
+  margin: 0 auto;
+}
+
+.recharts-surface{
+  width: 850px;
+}
